@@ -1,4 +1,4 @@
-
+/* video 01:44:08 */
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -16,7 +16,6 @@ const ChannelDetail = () => {
 
   const { id } = useParams();
 
-  console.log(channelDetail, videos);
 
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`)
